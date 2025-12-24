@@ -45,11 +45,11 @@ function onLeave(el, done) {
 </script>
 
 <template>
-    <nav class="p-6 relative z-20 h-16">
-        <div class="w-81.75 flex justify-between">
+    <nav class="p-6 relative z-20 h-16 md:py-300 md:px-1000">
+        <div class="w-81.75 flex justify-between md:w-152 ">
             <img :src="logoDark" alt="Logo">
 
-            <img :src="openMenu ? iconClose : hamburger" alt="menu-icon" class="md:hidden"
+            <img :src="openMenu ? iconClose : hamburger" alt="menu-icon" class="lg:hidden"
                 @click="openMenu = !openMenu">
         </div>
 
@@ -66,7 +66,7 @@ function onLeave(el, done) {
                 </div>
             </div>
         </Transition>
-        <div class="max-sm:hidden list-none">
+        <div class="hidden lg:block list-none">
             <ul class="flex gap-3">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
@@ -76,7 +76,7 @@ function onLeave(el, done) {
             </ul>
         </div>
 
-        <div class="max-sm:hidden">
+        <div class="hidden lg:block">
             <button class="rounded-full bg-linear-to-tr from-Cyan to-75% to-Green font-semibold text-white p-3">Request
                 Invite</button>
         </div>
