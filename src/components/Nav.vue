@@ -45,7 +45,7 @@ function onLeave(el, done) {
 </script>
 
 <template>
-    <nav class="p-6 relative z-20 h-16 md:py-300 md:px-1000">
+    <nav class="p-6 relative z-20 h-16 md:py-300 md:px-1000 max-md:flex justify-center">
         <div class="w-81.75 flex justify-between md:w-152 ">
             <img :src="logoDark" alt="Logo">
 
@@ -55,9 +55,10 @@ function onLeave(el, done) {
 
         <Transition @before-enter="onBeforeEnter" @enter="onEnter" @leave="onLeave" :css="false">
             <div @click.stop="openMenu = false"
-                class="h-screen absolute z-10 left-0 top-0 w-full overflow-auto bg-linear-0 to-black/50 flex"
+                class="h-screen absolute z-10 left-0 top-0 w-full overflow-auto bg-linear-0 to-black/50 flex md:justify-center"
                 v-if="openMenu">
-                <div class="bg-white h-fit w-full mt-10 mx-4 flex flex-col text-center gap-5 p-5 rounded">
+                <div
+                    class="bg-white h-66.25 w-81.75 mt-300 mx-300 flex flex-col text-center gap-200 py-400 rounded text-preset-5 md:my-400 md:w-151.75 md:h-66.25">
                     <a href="#">Home</a>
                     <a href="#">About</a>
                     <a href="#">Contact</a>
