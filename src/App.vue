@@ -30,18 +30,18 @@ import iconInstagram from '../images/icon-instagram.svg'
 
         <section class="relative">
             <div
-                class="bg-[url(../images/bg-intro-mobile.svg)] md:bg-[url(../images/bg-intro-desktop.svg)] bg-right bg-no-repeat h-69.75 overflow-hidden relative">
+                class="bg-[url(../images/bg-intro-mobile.svg)] md:bg-[url(../images/bg-intro-desktop.svg)] bg-right bg-no-repeat h-69.75 overflow-hidden md:overflow-auto relative md:h-145.25 object-fill">
 
-                <img :src="imageMockups" alt="bgIntro" class="absolute -top-33.25 left-0">
+                <img :src="imageMockups" alt="bgIntro" class="absolute -top-33.25 left-0 object-scale-down">
 
             </div>
 
-            <div class="mx-6 text-center mt-12 mb-14">
-                <h1 class="font-light text-[40px] leading-[120%] tracking-[-0.75px] text-Blue">Next generation digital
-                    banking
+            <div class="mx-6 text-center mt-600 mb-700 md:mb-900 md:w-111.75 md:mx-auto">
+                <h1 class="text-preset-2 font-light leading-[120%] tracking-[-0.75px] text-Blue md:text-preset-1">
+                    Next generation digital banking
                 </h1>
 
-                <p class="font-normal text-sm my-6 text-gray-600">
+                <p class="my-6 text-gray-600 text-preset-7 md:text-preset-5">
                     Take your financial life online. Your Digitalbank account will be a one-stop-shop
                     for spending, saving, budgeting, investing, and much more.
                 </p>
@@ -51,34 +51,40 @@ import iconInstagram from '../images/icon-instagram.svg'
             </div>
         </section>
 
-        <section class="bg-gray-100 py-16 px-6 text-center">
+        <section class="bg-gray-100 py-16 px-6 text-center md:p-1000 md:text-left">
             <div class="">
-                <h1 class="text-preset-3"> Why choose Digitalbank?</h1>
+                <div class="text-center md:mx-11.25">
+                    <h1 class="text-preset-3"> Why choose Digitalbank?</h1>
 
-                <p class="text-preset-7 text-gray-600 mt-4 mb-12">We leverage Open Banking to turn your bank account
-                    into your financial hub. Control your finances like never before.</p>
+                    <p class="text-preset-7 text-gray-600 mt-4 mb-12 md:text-preset-5">We leverage Open Banking to turn
+                        your bank account into your financial hub. Control your finances like never before.</p>
+                </div>
 
-                <div class="flex flex-col gap-8">
-                    <WhyUs :img-src="iconOnlineBanking" img-alt="iconOnlineBanking" title="Online Banking"
-                        content="Our modern web and mobile applications allow you to keep track of your finances wherever you are in the world." />
+                <div class="flex flex-col gap-8 md:pr-10.5 md:gap-800">
+                    <div class="flex flex-col gap-400 md:flex-row md:gap-700">
+                        <WhyUs :img-src="iconOnlineBanking" img-alt="iconOnlineBanking" title="Online Banking"
+                            content="Our modern web and mobile applications allow you to keep track of your finances wherever you are in the world." />
 
-                    <WhyUs :img-src="iconBudgeting" img-alt="iconBudgeting" title="Simple Budgeting"
-                        content=" See exactly where your money goes each month. Receive notifications when you’re close to hitting your limits." />
+                        <WhyUs :img-src="iconBudgeting" img-alt="iconBudgeting" title="Simple Budgeting"
+                            content=" See exactly where your money goes each month. Receive notifications when you’re close to hitting your limits." />
+                    </div>
 
-                    <WhyUs :img-src="iconOnboarding" img-alt="iconOnboarding" title="Fast Onboarding"
-                        content="We don’t do branches. Open your account in minutes online and start taking control of your finances right away." />
+                    <div class="flex flex-col gap-400 md:flex-row md:gap-700">
+                        <WhyUs :img-src="iconOnboarding" img-alt="iconOnboarding" title="Fast Onboarding"
+                            content="We don’t do branches. Open your account in minutes online and start taking control of your finances right away." />
 
-                    <WhyUs :img-src="iconApi" img-alt="iconApi" title="Open API"
-                        content=" Manage your savings, investments, pension, and much more from one account. Tracking your money has never been easier." />
+                        <WhyUs :img-src="iconApi" img-alt="iconApi" title="Open API"
+                            content=" Manage your savings, investments, pension, and much more from one account. Tracking your money has never been easier." />
+                    </div>
 
                 </div>
             </div>
         </section>
 
         <section>
-            <div class="my-800 px-300">
+            <div class="my-800 px-300 md:my-1000 md:px-1000">
                 <h1 class="text-preset-3 text-center text-Blue mb-600">Latest Articles</h1>
-                <div class="flex flex-col gap-200">
+                <div class="flex flex-col gap-200 md:grid md:grid-cols-2">
                     <ArticleCard :img="imageCurrency" alt="image-currency" by="Claire Robinson"
                         title="Receive money in any currency with no fees"
                         details="The world is getting smaller and we’re becoming more mobile. So why should you be forced to only receive money in a single …" />
@@ -112,7 +118,7 @@ import iconInstagram from '../images/icon-instagram.svg'
                     <img :src="iconInstagram" alt="icon-instagram">
                 </div>
 
-                <ul class="flex flex-col gap-200 mb-400 text-preset-7">
+                <ul class="flex flex-col gap-200 mb-400 text-preset-7 md:text-center">
                     <li><a href="#">About Us</a></li>
                     <li><a href="#">Contact</a></li>
                     <li><a href="#">Blog</a></li>
