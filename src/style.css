@@ -25,7 +25,7 @@
   --spacing-1000: 80px;
   --spacing-1500: 1200px;
 }
-
+/* 
 .text-preset-1 {
   font-size: 56px;
   line-height: 120%;
@@ -87,7 +87,7 @@
   line-height: 115%;
   letter-spacing: 0px;
   font-weight: 400;
-}
+} */
 
 .gradient-1 {
   background-image: linear-gradient(to bottom, hsl(136, 64%, 51%), hsl(192, 69%, 51%));
@@ -95,4 +95,116 @@
 
 .gradient-2 {
   background-image: linear-gradient(hsl(231, 26%, 24%), white);
+}
+
+@layer components {
+  .text-preset-1 {
+    @apply text-[56px] leading-[120%] tracking-[-1px] font-light;
+  }
+
+  .text-preset-2 {
+    @apply text-[40px] leading-[120%] tracking-[-0.75px] font-light;
+  }
+
+  .text-preset-3 {
+    @apply text-[32px] leading-[115%] tracking-[-0.5px] font-light;
+  }
+
+  .text-preset-4 {
+    @apply text-[24px] leading-[115%] tracking-[-0.4px] font-light;
+  }
+
+  .text-preset-5 {
+    @apply text-[18px] leading-[155%] tracking-[-0.25px] font-normal;
+  }
+
+  .text-preset-6 {
+    @apply text-[16px] leading-[120%] tracking-[-0.25px] font-light;
+  }
+
+  .text-preset-7 {
+    @apply text-[14px] leading-[115%] tracking-[0px] font-normal;
+  }
+
+  .text-preset-7-bold {
+    @apply text-[14px] leading-[200%] tracking-[0px] font-bold;
+  }
+
+  .text-preset-8 {
+    @apply text-[10px] leading-[115%] tracking-[0px] font-normal;
+  }
+
+  @media (min-width: 768px) {
+    .md\:text-preset-1 {
+      @apply text-[56px] leading-[120%] tracking-[-1px] font-light;
+    }
+
+    .md\:text-preset-2 {
+      @apply text-[40px] leading-[120%] tracking-[-0.75px] font-light;
+    }
+
+    .md\:text-preset-3 {
+      @apply text-[32px] leading-[115%] tracking-[-0.5px] font-light;
+    }
+
+    .md\:text-preset-4 {
+      @apply text-[24px] leading-[115%] tracking-[-0.4px] font-light;
+    }
+
+    .md\:text-preset-5 {
+      @apply text-[18px] leading-[155%] tracking-[-0.25px] font-normal;
+    }
+
+    .md\:text-preset-6 {
+      @apply text-[16px] leading-[120%] tracking-[-0.25px] font-light;
+    }
+
+    .md\:text-preset-7 {
+      @apply text-[14px] leading-[115%] tracking-[0px] font-normal;
+    }
+
+    .md\:text-preset-7-bold {
+      @apply text-[14px] leading-[200%] tracking-[0px] font-bold;
+    }
+
+    .md\:text-preset-8 {
+      @apply text-[10px] leading-[115%] tracking-[0px] font-normal;
+    }
+  }
+  @media (min-width: 1024px) {
+    .lg\:text-preset-1 {
+      @apply text-[56px] leading-[120%] tracking-[-1px] font-light;
+    }
+
+    .lg\:text-preset-2 {
+      @apply text-[40px] leading-[120%] tracking-[-0.75px] font-light;
+    }
+    .lg\:text-preset-3 {
+      @apply text-[32px] leading-[115%] tracking-[-0.5px] font-light;
+    }
+
+    .lg\:text-preset-4 {
+      @apply text-[24px] leading-[115%] tracking-[-0.4px] font-light;
+    }
+
+    .lg\:text-preset-5 {
+      @apply text-[18px] leading-[155%] tracking-[-0.25px] font-normal;
+    }
+
+    .lg\:text-preset-6 {
+      @apply text-[16px] leading-[120%] tracking-[-0.25px] font-light;
+    }
+
+    .lg\:text-preset-7 {
+      @apply text-[14px] leading-[115%] tracking-[0px] font-normal;
+    }
+
+    .lg\:text-preset-7-bold {
+      @apply text-[14px] leading-[200%] tracking-[0px] font-bold;
+    }
+
+    .lg\:text-preset-8 {
+      @apply text-[10px] leading-[115%] tracking-[0px] font-normal;
+    }
+  }
 }
