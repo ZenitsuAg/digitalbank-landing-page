@@ -9,7 +9,7 @@ const openMenu = ref(false)
 
 function onBeforeEnter(el) {
     gsap.set(el, {
-        y: -50,
+        y: -300,
         ease: 'power.inOut(2.5, 1)',
         opacity: 1
     })
@@ -45,8 +45,8 @@ function onLeave(el, done) {
 </script>
 
 <template>
-    <nav class="p-6 relative z-20 h-16 md:py-300 md:px-1000 max-md:flex justify-center">
-        <div class="w-81.75 flex justify-between md:w-152 ">
+    <nav class="p-6 relative z-20 h-16 md:py-300 md:px-1000 flex justify-center lg:justify-between lg:items-center lg:px-41.25 lg:h-1000">
+        <div class="w-81.75 flex justify-between md:w-152 lg:w-auto ">
             <img :src="logoDark" alt="Logo">
 
             <img :src="openMenu ? iconClose : hamburger" alt="menu-icon" class="lg:hidden"
@@ -68,7 +68,7 @@ function onLeave(el, done) {
             </div>
         </Transition>
         <div class="hidden lg:block list-none">
-            <ul class="flex gap-3">
+            <ul class="flex gap-400 text-gray-600 text-preset-7">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contact</a></li>
@@ -78,7 +78,7 @@ function onLeave(el, done) {
         </div>
 
         <div class="hidden lg:block">
-            <button class="rounded-full bg-linear-to-tr from-Cyan to-75% to-Green font-semibold text-white p-3">Request
+            <button class="rounded-full bg-linear-to-tr from-Cyan to-75% to-Green font-semibold text-white p-3 lg:rounded-[22px] lg:py-100 lg:px-400 lg:h-11">Request
                 Invite</button>
         </div>
     </nav>
