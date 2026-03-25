@@ -106,30 +106,41 @@ import iconInstagram from '../images/icon-instagram.svg'
         </section>
 
 
-        <footer class="h-127.5 py-700 bg-Blue text-white">
-            <div class="flex flex-col items-center">
-                <img :src="logoLight" alt="logo">
+        <footer class="h-127.5 py-700 bg-Blue text-white lg:px-41.25 lg:h-[191px]">
+            <div class="flex flex-col items-center lg:flex-row lg:justify-between lg:max-w-[1110px]">
+                <div class="lg:flex lg:flex-1 lg:gap-[120px]">
+                    <div class="lg:">
+                        <img :src="logoLight" alt="logo">
 
-                <div id="social" class="flex gap-200 my-400">
-                    <img :src="iconFacebook" alt="icon-facebook">
-                    <img :src="iconYoutube" alt="icon-youtube">
-                    <img :src="iconTwitter" alt="icon-twitter">
-                    <img :src="iconPinterest" alt="icon-pinterest">
-                    <img :src="iconInstagram" alt="icon-instagram">
+                        <div id="social" class="flex gap-200 my-400">
+                            <img :src="iconFacebook" alt="icon-facebook">
+                            <img :src="iconYoutube" alt="icon-youtube">
+                            <img :src="iconTwitter" alt="icon-twitter">
+                            <img :src="iconPinterest" alt="icon-pinterest">
+                            <img :src="iconInstagram" alt="icon-instagram">
+                        </div>
+                    </div>
+
+                    <div class="lg:flex lg:gap-300">
+                        <ul class="flex flex-col gap-200 mb-200 text-preset-7 text-center lg:text-left lg:w-40">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                        <ul class="flex flex-col gap-200 mb-400 text-preset-7 text-center lg:text-left lg:w-40">
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Support</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    
+
                 </div>
+                <div class="text-center">
+                    <button class="gradient-1 text-preset-7-bold py-100 px-400 rounded-[22px] cursor-pointer active:grayscale-50">Request Invite</button>
 
-                <ul class="flex flex-col gap-200 mb-400 text-preset-7 md:text-center">
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Careers</a></li>
-                    <li><a href="#">Support</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                </ul>
-
-                <button class="gradient-1 text-preset-7-bold py-100 px-400 rounded-[22px]">Request Invite</button>
-
-                <p class="mt-300 text-preset-7 text-gray-600"> © Digitalbank. All Rights Reserved</p>
+                    <p class="mt-300 text-preset-7 text-gray-600"> © Digitalbank. All Rights Reserved</p>
+                </div>
             </div>
 
         </footer>
