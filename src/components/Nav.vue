@@ -45,7 +45,7 @@ function onLeave(el, done) {
 </script>
 
 <template>
-    <nav class="p-6 relative z-20 h-16 md:py-300 md:px-1000 flex justify-center lg:justify-between lg:items-center lg:px-41.25 lg:h-1000">
+    <nav class="p-6 relative z-20 h-16 md:py-300 md:px-1000 flex justify-center lg:justify-between lg:items-center lg:px-41.25 lg:h-1000 bg-white">
         <div class="w-81.75 flex justify-between md:w-152 lg:w-auto ">
             <img :src="logoDark" alt="Logo">
 
@@ -78,7 +78,7 @@ function onLeave(el, done) {
         </div>
 
         <div class="hidden lg:block">
-            <button class="rounded-full bg-linear-to-tr from-Cyan to-75% to-Green font-semibold text-white p-3 lg:rounded-[22px] lg:py-100 lg:px-400 lg:h-11">Request
+            <button class="rounded-full bg-linear-to-tr from-Cyan to-75% to-Green font-semibold text-white p-3 lg:rounded-[22px] lg:py-100 lg:px-400 lg:h-11 cursor-pointer active:opacity-60">Request
                 Invite</button>
         </div>
     </nav>
