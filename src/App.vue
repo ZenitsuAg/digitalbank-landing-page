@@ -28,15 +28,16 @@ import iconInstagram from '../images/icon-instagram.svg'
 
     <main class="font-public-sans bg-gray-50">
 
-        <section class="relative">
-            <div
-                class="bg-[url(../images/bg-intro-mobile.svg)] md:bg-[url(../images/bg-intro-desktop.svg)] bg-right bg-no-repeat h-69.75 overflow-hidden md:overflow-auto relative md:h-145.25 object-fill">
+        <section class="lg:flex lg:flex-row-reverse gap-400 lg:h-[778px] max-sm:bg-[url(../images/bg-intro-mobile.svg)] bg-[position:0px_100px] md:bg-position-[0px_-190px] bg-[url(../images/bg-intro-desktop.svg)] bg-no-repeat overflow-clip xl:justify-between lg:bg-[position:612px_-225px]">
+            
 
-                <img :src="imageMockups" alt="bgIntro" class="absolute -top-33.25 left-0 object-scale-down">
+            <div class="-my-[131px] md:-my-[275px] lg:-my-[165px] lg:-mr-32">
 
+
+                <img :src="imageMockups" alt="" class="">
             </div>
 
-            <div class="mx-6 text-center mt-600 mb-700 md:mb-900 md:w-111.75 md:mx-auto">
+            <div class="mx-6 text-center mt-600 mb-700 max-sm:mt-44 md:mt-72 md:max-md:w-[447px] md:mb-900 md:w-111.75 md:mx-auto lg:text-left lg:m-0 lg:ml-[161px] lg:h-[656px] lg:w-[447px] lg:flex lg:flex-col lg:justify-center lg:items-center">
                 <h1 class="text-preset-2 font-light leading-[120%] tracking-[-0.75px] text-Blue md:text-preset-1">
                     Next generation digital banking
                 </h1>
@@ -51,17 +52,17 @@ import iconInstagram from '../images/icon-instagram.svg'
             </div>
         </section>
 
-        <section class="bg-gray-100 py-16 px-6 text-center md:p-1000 md:text-left">
-            <div class="">
-                <div class="text-center md:mx-11.25">
+        <section class="bg-gray-100 py-16 px-6 text-center md:p-1000 md:text-left lg:p-0 lg:py-24 lg:-mt-[122px]">
+            <div class="lg:px-41.25">
+                <div class="text-center md:mx-11.25 lg:text-left lg:w-158.75 lg:mx-0 lg:mb-900">
                     <h1 class="text-preset-3"> Why choose Digitalbank?</h1>
 
                     <p class="text-preset-7 text-gray-600 mt-4 mb-12 md:text-preset-5">We leverage Open Banking to turn
                         your bank account into your financial hub. Control your finances like never before.</p>
                 </div>
 
-                <div class="flex flex-col gap-8 md:pr-10.5 md:gap-800">
-                    <div class="flex flex-col gap-400 md:flex-row md:gap-700">
+                <div class="flex flex-col gap-8 md:pr-10.5 md:gap-800 lg:flex-row lg:gap-400">
+                    <div class="flex flex-col gap-400 md:flex-row md:gap-700 lg:gap-400">
                         <WhyUs :img-src="iconOnlineBanking" img-alt="iconOnlineBanking" title="Online Banking"
                             content="Our modern web and mobile applications allow you to keep track of your finances wherever you are in the world." />
 
@@ -69,7 +70,7 @@ import iconInstagram from '../images/icon-instagram.svg'
                             content=" See exactly where your money goes each month. Receive notifications when you’re close to hitting your limits." />
                     </div>
 
-                    <div class="flex flex-col gap-400 md:flex-row md:gap-700">
+                    <div class="flex flex-col gap-400 md:flex-row md:gap-700 lg:gap-400">
                         <WhyUs :img-src="iconOnboarding" img-alt="iconOnboarding" title="Fast Onboarding"
                             content="We don’t do branches. Open your account in minutes online and start taking control of your finances right away." />
 
@@ -82,9 +83,9 @@ import iconInstagram from '../images/icon-instagram.svg'
         </section>
 
         <section>
-            <div class="my-800 px-300 md:my-1000 md:px-1000">
-                <h1 class="text-preset-3 text-center text-Blue mb-600">Latest Articles</h1>
-                <div class="flex flex-col gap-200 md:grid md:grid-cols-2">
+            <div class="my-800 px-300 md:my-1000 md:px-1000 lg:px-[165px]">
+                <h1 class="text-preset-3 text-center text-Blue mb-600 lg:text-left">Latest Articles</h1>
+                <div class="flex flex-col gap-200 md:grid md:grid-cols-2 lg:flex lg:flex-row lg:gap-400">
                     <ArticleCard :img="imageCurrency" alt="image-currency" by="Claire Robinson"
                         title="Receive money in any currency with no fees"
                         details="The world is getting smaller and we’re becoming more mobile. So why should you be forced to only receive money in a single …" />
@@ -106,9 +107,9 @@ import iconInstagram from '../images/icon-instagram.svg'
         </section>
 
 
-        <footer class="h-127.5 py-700 bg-Blue text-white lg:px-41.25 lg:h-[191px]">
-            <div class="flex flex-col items-center lg:flex-row lg:justify-between lg:max-w-[1110px]">
-                <div class="lg:flex lg:flex-1 lg:gap-[120px]">
+        <footer class="h-127.5 py-700 bg-Blue text-white lg:px-41.25 lg:h-47.75">
+            <div class="flex flex-col items-center lg:flex-row lg:justify-between lg:max-w-277.5">
+                <div class="lg:flex lg:flex-1 lg:gap-30">
                     <div class="lg:">
                         <img :src="logoLight" alt="logo">
 

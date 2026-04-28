@@ -9,7 +9,7 @@ const props = defineProps(['imgSrc', 'imgAlt', 'title', 'content'])
         </div>
         <div class="">
             <h1 class="text-preset-4 mb-6 mt-10">{{ title }}</h1>
-            <p class="text-preset-7 text-gray-600 md:text-base leading-6.5 tracking-[-0.25px]">{{ content }}</p>
+            <p class="text-preset-7 text-gray-600 md:text-base md:leading-6.5 md:tracking-[-0.25px]">{{ content }}</p>
         </div>
     </div>
 

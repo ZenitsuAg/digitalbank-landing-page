@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-@import 'tailwindcss';
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import "tailwindcss";
 
 @theme {
   --color-Blue: hsl(233, 26%, 24%);
@@ -10,7 +10,7 @@
   --color-gray-100: hsl(220, 16%, 96%);
   --color-gray-50: hsl(0, 0%, 98%);
 
-  --font-public-sans: 'Public Sans';
+  --font-public-sans: "Public Sans";
 
   --spacing-0: 0px;
   --spacing-100: 8px;
@@ -90,7 +90,11 @@
 } */
 
 .gradient-1 {
-  background-image: linear-gradient(to bottom, hsl(136, 64%, 51%), hsl(192, 69%, 51%));
+  background-image: linear-gradient(
+    to bottom,
+    hsl(136, 64%, 51%),
+    hsl(192, 69%, 51%)
+  );
 }
 
 .gradient-2 {
